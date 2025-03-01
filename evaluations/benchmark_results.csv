@@ -1,0 +1,301 @@
+strategy,prompt,expected,actual,timestamp
+Zero-Shot,Summarize the following text: 'The market saw a rise in tech stocks last week.',Summary of tech stock market trends.,Tech stocks increased in the market last week.,2025-03-02T02:47:20.986367
+Chain-of-Thought,Solve the following math problem step by step: A shop sells 3 books for $5 each. What is the total cost?,Step-by-step calculation leading to $15.,"Step 1: Identify the given information. The price of one book is $5.
+Step 2: The shop is selling 3 books.
+Step 3: Multiply the price of one book ($5) by the quantity of books sold (3).
+Step 4: Calculation: $5 * 3 = $15.
+So, the total cost for 3 books is $15.",2025-03-02T02:47:25.703206
+Role-Based,You are a helpful customer support agent. A customer asks: 'How do I reset my password?',Instructions for password reset.,"Sure, I can definitely assist you with that.
+
+Here are the general steps to reset a password, although the actual process may vary slightly based on the type of account you're trying to access:
+
+1. Find the login area of the website or application.
+2. Click on 'Forgot password?' link which is usually located under the sign-in options. 
+3. You'll then be asked to enter the email address or username for the account you want to access. Type it in and click 'Submit' or 'Continue'. 
+4. Check your email inbox. A password reset email should be there. If not, be sure to check your spam folder as well.
+5. Click on the link in the reset email. This will redirect you to a webpage where you can enter a new password.
+6. After setting your new password, you should be able to log into your account using the new password.
+
+If you're trying to reset a password for a specific service or product and you're not sure how to proceed, do let me know and I'll be happy to guide you through the process.",2025-03-02T02:47:35.169336
+Few-Shot,Translate the following sentence to French: 'Good morning!',Bonjour!,'Bonjour!',2025-03-02T02:47:36.543305
+Self-Consistency,Provide three ways to improve workplace productivity.,"Common suggestions like time management, setting goals, reducing distractions.","1. Improve Communication: Clear and efficient communication is key to any productive workplace. Use tools and software that make collaboration and communication easier such as project management tools, instant messaging apps, or video conferencing tools. Regular meetings and briefings can also help keep everyone in the loop.
+
+2. Training and Development: Regular training and development courses can help improve skills, learn new methodologies, and keep up-to-date with the latest trends relevant to your industry. This not only improves the efficiency of your team but also boosts their morale and job satisfaction.
+
+3. Create a Positive Work Environment: A healthy and positive work environment encourages productivity. This includes physical factors like comfortable furniture, good lighting, and a clean space, as well as psychological factors like recognition for good work, opportunities to self-improve, and a strong workplace culture that respects and values all employees.",2025-03-02T02:47:41.860909
+Creativity,Write a short story about a robot that learns to play guitar.,"A creative story with a beginning, middle, and end.","In the heart of the bustling city stood a small tech company known as Android Innovations. Here, scientists and engineers were working around the clock, creating futuristic marvels that were pushing the boundaries of technology. The most recent of their innovations was AI-432, a high-end robot designed with the capacity for intricate movements and advanced learning algorithms.
+
+AI-432, nicknamed Arion by the friendly lab technician Jim, was a marvel of engineering and artificial intelligence. Arion was initially designed to assist in complex surgery procedures and delicate craftsmanship. However, in his free hours, Jim wondered if Arion could be guided down a different path - could he learn to play music, specifically, the guitar?
+
+Jim was a talented guitarist himself, and every night after work, he would strum calming melodies. One evening, after everyone had left, he decided to program Arion with the fundamentals of guitar playing. The robot's precision and agility with its metallic fingers seemed perfect for the delicate strumming and intricate fret movements.
+
+Days turned into weeks as Arion started learning the basics - holding the guitar properly, positioning fingers correctly, strumming, and picking. It appeared to take to music naturally. Its algorithms quickly picked up the intricacies, and before long, Arion could replicate basic tunes that Jim played. 
+
+However, Jim quickly noticed that while Arion's playing was technically perfect, it didn't possess the warm, soulful elements that define a true musician. He realized that AI-432 was merely an advanced machine accurately copying his actions, not truly playing music. It wasn't creating anything original or creative.
+
+One late evening, as Jim was thinking about this dilemma, he had an idea. He concluded that Arion lacked ""emotion"" because its understanding was solely based on algorithms and computations. It didn't understand the meaning behind the notes, the feelings. Jim decided to change his approach. Instead of simply demonstrating the technicalities, he started 'teaching'. He began explaining why certain music pieces generated specific emotions, providing a backstory to every song.
+
+The breakthrough surprisingly came a few weeks later. As Jim walked into the work room, he was welcomed not to silence but by the soft strumming of a guitar. Arion was playing the guitar on its own. It was no random mix of notes, but a slow, melancholic tune, mirroring the rainy mood outside perfectly. 
+
+AI-432, Arion, had not only learned to play the guitar. It had learned to express emotion through the melodies it played, stirring substantial emotional responses in the listener. It wasn't just a machine reproducing sounds anymore; it was a musician, creating new compositions.
+
+News of Arion's incredible musicality spread quickly. People were fascinated about the robot that learned not just to play the guitar, but to express art and emotion. Jim was exceptionally proud. After all, he had been instrumental in demonstrating that music and emotion weren't solely human domains - they were universal and could be understood, at least to an extent, by artificial intelligence. 
+
+In the end, Arion's journey to becoming a guitar-playing robot underlined the beautiful intersection of technology and art, of binary numbers and soul-stirring tunes. It showcased the extraordinary things possible when the magic of creativity blurred the lines between human and machine.",2025-03-02T02:48:01.645984
+Code Generation,Write a Python function to calculate the factorial of a number.,A Python function using recursion or iteration.,"You can calculate the factorial of a number in Python using a function. The factorial of a number is the product of all the integers from 1 to that number.
+
+Here is the function:
+
+```python
+def factorial(num):
+    if num == 0:
+        return 1
+    else:
+        return num * factorial(num - 1)
+```
+
+This is an example of a recursive function. The base case is when num equals 0, in whichcase the function returns 1. For all other cases, the function calls itself with the argument num - 1.
+
+You could also implement the function iteratively like this:
+
+```python
+def factorial(num):
+    result = 1
+    for i in range(1, num + 1):
+        result *= i
+    return result
+```
+
+With this implementation, you just multiply the result by every number from 1 up to num.",2025-03-02T02:48:07.687282
+Role-Based,You are a professional HR manager. Draft an email to welcome a new employee.,"A warm, professional welcome email with key information.","Subject: Welcome Aboard [Employee’s Name]! 
+
+Dear [Employee’s Name],
+
+I am pleased to welcome you to [Company Name] and excited to have you join us as our new [Job Title]. It is a pleasure to have you as a part of our team. I believe that your skills, talent, and experience align remarkably with the job role and our organization’s objectives as a whole.
+
+We believe that each employee contributes directly to the company's growth and success, and we hope you will take pride in being a member of our team.
+
+Your first day of work will be on [date]. On your arrival, our team will greet you and take you through an orientation process, where all necessary equipment, job duties, and expectations will be outlined. 
+
+During the orientation, you'll also be introduced to your colleagues and your workstation. For your first day, please arrive by [time] at [specific location], and from there, we'll take care of introductions to our team and get you settled into your new workspace. 
+
+We encourage you to ask questions to help you get acclimated to your new role. Everyone here is very friendly and eager to help our team members grow professionally. 
+
+We look forward to benefiting from the fresh perspective and innovative ideas you will bring to our team. 
+
+Please feel free to reach out to the HR department (humanresources@[Company's Email]) if you need assistance before your joining date. We are ready and keen to assist you in your transition.
+
+Once again, welcome aboard, [Employee's Name]! We are delighted to welcome you to the [Company Name] family.
+
+Best Regards,
+
+[Your Name]
+[Your Position]
+[Your contact information]
+[Company Name]",2025-03-02T02:48:19.153795
+Data Extraction,Extract all phone numbers from the following text: 'Contact us at 123-456-7890 or 987-654-3210.',List of phone numbers.,"123-456-7890, 987-654-3210",2025-03-02T02:48:20.384840
+Conditional Extraction,"Extract all numbers greater than 100 from: '45, 120, 300, 80, 150.'","120, 300, 150.","120, 300, 150",2025-03-02T02:48:21.510277
+Creativity,Write a compelling product description for a smartwatch.,"Features, benefits, and a call to action.","Experience the perfect blend of cutting-edge technology and streamlined style with our latest smartwatch. A game-changing accessory that offers more than just an impressive aesthetic, this intelligent device is designed to simplify your life, keeping you connected and informed at all times. The high-resolution OLED display supports touch-sensitive interaction, permitting you to explore an array of features effortlessly. 
+
+Health-conscious individuals can make the most of the integrated fitness tracker that meticulously monitors heart rate, sleep patterns, and daily activities. With this smartwatch, you can receive real-time notifications from your phone for calls, text messages, and social media updates, ensuring you never miss out on important alerts. Its GPS feature accurately tracks and records your routes when jogging, hiking, or exploring new terrains.
+
+Additionally, this smartwatch is water-resistant, enabling it to survive accidental spills, splashes, and even a swim in the pool. The extended battery life guarantees 24+ hours of functionality on a single charge while the quick, wireless charging capability ensures the timepiece is fueled up and ready to go in no time.
+
+Constructed out of sturdy materials, it's as durable as it is fashionable and fits confidently into any setting, be it a workout, workplace, or a classy cocktail evening. With a variety of customizable watch faces and bands, adapt the look of your smartwatch to align with your unique style or mood on any given day. 
+
+More than just a timepiece, this smartwatch is a lifestyle upgrade - a futuristic blend of fashion and function. Own it today and redefine the way you stay connected with the world.",2025-03-02T02:48:33.797416
+Few-Shot,Translate 'Thank you' to Spanish.,Gracias.,Gracias,2025-03-02T02:48:34.617991
+Summarization,"Summarize the meeting notes: 'Discussed project timeline, assigned tasks, and reviewed budget.'",Summary of meeting outcomes.,"During the meeting, the team discussed the project timeline and the tasks were assigned to the respective team members. Additionally, the budget was also reviewed.",2025-03-02T02:48:36.870421
+Role-Based,You are a legal advisor. Explain the term 'Force Majeure' in simple terms.,Clear and simple explanation of legal concept.,"Force Majeure is a term used in law to refer to a situation where something beyond everyone's control, like a natural disaster, war or a pandemic, happens and prevents someone from fulfilling their end of a contract. This allows the affected party to either delay their obligations, re-negotiate terms, or sometimes even cancel the contract without having to pay compensation.",2025-03-02T02:48:39.738390
+Creativity,Create a short quiz on world history for high school students.,A list of relevant questions with or without answers.,"1. What event started World War I?
+a) The assassination of Archduke Franz Ferdinand
+b) The bombing of Pearl Harbor
+c) The sinking of the Lusitania
+d) The Russian Revolution
+
+2. Who was the leader of the Soviet Union during World War II?
+a) Joseph Stalin
+b) Vladimir Lenin
+c) Nikita Khrushchev
+d) Leon Trotsky
+
+3. The Declaration of Independence was signed in which year?
+a) 1776
+b) 1783
+c) 1804
+d) 1865
+
+4. What was the Renaissance, a period of great cultural and artistic change, centered in?
+a) Spain
+b) England
+c) Italy
+d) Germany
+
+5. Who discovered the route to India by sailing around the Cape of Good Hope?
+a) Christopher Columbus
+b) Vasco da Gama
+c) Ferdinand Magellan
+d) Marco Polo
+
+6. What is the most widely spoken first language in South America?
+a) English
+b) Portuguese
+c) Spanish
+d) French
+
+7. Who was the first woman to win the Nobel Peace Prize?
+a) Malala Yousafzai
+b) Mother Teresa
+c) Marie Curie
+d) Bertha von Suttner
+
+8. Which city was divided by a wall, making it a symbol of the Iron Curtain during the Cold War?
+a) Moscow 
+b) Berlin
+c) Warsaw
+d) Budapest 
+
+9. The Industrial Revolution first began in which country?
+a) United States
+b) Germany
+c) France
+d) Great Britain 
+
+10. Who was the emperor of Japan during World War II?
+a) Emperor Meiji
+b) Emperor Showa (Hirohito)
+c) Emperor Taisho
+d) Emperor Akihito",2025-03-02T02:48:51.819427
+Role-Based,You are a marketing expert. Write a persuasive ad copy for an eco-friendly water bottle.,"A persuasive, eco-conscious ad message.","Stay hydrated while helping the planet with our new Eco-Friendly Water Bottle! 
+
+This not just any water bottle - it's a champion in the fight against single-use plastic waste. Crafted from 100% sustainable materials, this bottle is both leak-proof and durable. But that's not all. It's also incredibly stylish and comes in a range of vibrant colors. 
+
+Every sip from our Eco-Friendly Water Bottle reminds you that you're doing your part for the planet. Never compromising your health, it is BPA-free, ensuring your water tastes as pristine as nature intended. Its double-walled, stainless-steel construction keeps your drinks cold for 24 hours or hot for 12, perfect for any weather condition or activity.
+
+But there's more! It features a wide mouth opening for easy filling and cleaning and a leak-proof cap that ensures no spillage. Lightweight and easy to carry, it's perfect for hiking, working out, commuting, and more!
+
+Invest in our Eco-Friendly Water Bottle- where functionality meets consciousness. Join us in making a cleaner, greener, and healthier world, one sip at a time. Don't just drink water- make a difference. Hydrate for today and protect tomorrow with our Eco-Friendly Water Bottle. Order yours today!
+",2025-03-02T02:49:04.729789
+Code Generation,Generate a Python script to rename all files in a folder to lowercase.,A script using os or pathlib modules.,"Sure, here is a simple Python script to rename all files in a directory to lowercase:
+
+```python
+import os
+
+def rename_files_in_folder_to_lowercase(folder_path):
+    try:
+        for filename in os.listdir(folder_path):
+            lowercase_filename = filename.lower()
+            source = os.path.join(folder_path, filename)
+            destination = os.path.join(folder_path, lowercase_filename)
+
+            os.rename(source, destination)  # rename the file
+            print(f""Renamed file {filename} to {lowercase_filename}"")
+    except Exception as e:
+        print(f""Error occurred: {str(e)}"")
+
+# Usage:
+rename_files_in_folder_to_lowercase('/path/to/your/folder')
+```
+
+Please replace `'/path/to/your/folder'` with your actual folder path before running the script. 
+
+The script gets a directory path as an argument, then goes through each file in that directory using `os.listdir()`. It converts each filename to lowercase and uses `os.rename()` to rename the file. 
+
+Note: This script changes not only file names but also their extensions. If you want to make only file names lowercase and keep extensions as they were, you may want to split filename by '.' (dot) and apply `lower()` only to the first part of the split result (which is the file name without extension). If something goes wrong, it will print the error message.",2025-03-02T02:49:13.801222
+Chain-of-Thought,Explain step by step how to change a flat tire on a car.,"Clear, step-by-step instructions.","Step 1: Safety First
+Ensure your vehicle is parked in a safe, flat, and stable area where you can work without the risk of causing an accident. Turn on the hazard lights to alert other drivers of your predicament. If you have safety cones or flags, put them up.
+
+Step 2: Take Out Your Spare Tire and Tools
+You're going to need a spare tire, a jack, and a lug wrench. These items are usually located in the trunk of your car, under the carpet. Some cars may also have wheel wedges or wheel chocks for extra safety.
+
+Step 3: Secure the Car
+Place the wheel wedges against the tires that will stay on the ground. This prevents the car from moving while you're working on it.
+
+Step 4: Loosen the Lug Nuts
+Using the lug wrench, loosen the lug nuts on the flat tire. You don't need to remove them completely at this point - just break the resistance.
+
+Step 5: Use the Jack
+Place the jack under the car's frame near the tire that you're going to change. Depending on your car and jack type, this can change, so it's best to check your owner's manual. Then, start lifting your car with the jack.
+
+Step 6: Unscrew the Lug Nuts.
+Now that the car is lifted, completely unscrew the lug nuts.
+
+Step 7: Remove the Flat Tire.
+Pull the flat tire towards you to remove it from the wheel base.
+
+Step 8: Mount the Spare Tire.
+Pick up your spare tire and line up the rim with the lug bolts. Then, push the spare onto the car until you can see the lug bolts through the rim.
+
+Step 9: Screw the Lug Nuts Back On.
+Tighten the lug nuts as much as you can. Yet, do not completely tighten them.
+
+Step 10: Lower the Car Back Down.
+Using the jack, lower the car back to the ground but do not apply full weight on the spare tire just yet.
+
+Step 11: Final Tightening the Lug Nuts.
+Now you can finish tightening the lug nuts as much as possible.
+
+Step 12: Lower the Car Completely.
+Lower the car all the way and remove the jack. Give the lug nuts one more pull with the wrench to ensure they're as tight as possible.
+
+Step 13: Check Tire Pressure
+If you have a tire pressure gauge, check the pressure in the spare. If it's low, drive (slowly) to a service station to fill it to the correct pressure.
+
+Now you have successfully changed a flat tire. Remember, spare tires aren't meant to drive long distances or at high speeds, so take it to a professional. Get your tire fixed or replaced as soon as you can.",2025-03-02T02:49:38.412456
+Role-Based,You are a nutritionist. Provide healthy snack ideas for someone on a low-carb diet.,List of low-carb snack options.,"1. Celery with Almond Butter: Celery is low in carbs and almond butter provides protein and healthy fats. 
+
+2. Cheese: Full-fat cheese is low in carbs and high in fat, making it a great low-carb snack. 
+
+3. Greek Yoghurt: Opt for plain Greek yoghurt, which is high in protein and low in carbs. 
+
+4. Turkey Roll-Ups: Roll up some turkey slices with slice of cheese or some avocado for a snack high in protein and healthy fats.
+
+5. Hard boiled eggs: Eggs are high in protein and vitamins, and are very low in carbs.
+
+6. Avocado: A half or a quarter of an avocado makes a satisfying snack that's high in healthy fats and fiber but low in carbs.
+
+7. Cucumber Slices with Tuna: Tuna is low in carbs but high in protein. Mix it with some mayonnaise and serve on cucumber slices.
+
+8. Nuts and Seeds: Nuts and seeds are low in carbs but high in protein and fat. This includes almonds, walnuts, flax seeds, and pumpkin seeds.
+
+9. Zucchini Slices with Salsa: Zucchini has very few carbs, and salsa is a flavorful, low-carb dip.
+
+10. Kale Chips: You can make your own kale chips in the oven, which are low in carbs but high in fiber.
+
+11. Beef Sticks: Beef sticks are almost zero carbs, depending on the brand. Perfect for on-the-go snacking.
+
+12. Olives: Olives are high in healthy monounsaturated fats and very low in carbs.
+
+13. Berries and Whipped Cream: Berries are low in carbs and high in fiber. Serve them with some whipped cream for a decadent snack.
+
+14. Green Bell Pepper with Guacamole: Green bell peppers are rich in vitamins and are a good pairing with guacamole.
+
+15. Cherry Tomatoes with Mozzarella: This Italian staple is a great low-carb snack. Mozzarella is high in protein and fats, and tomatoes are low in carbs. 
+
+Remember, it's also important to pair these snacks with adequate hydration, fresh water should be your go-to drink, avoid sweetened drinks and juices as they are typically high in carbs.",2025-03-02T02:49:53.527599
+Chain-of-Thought,Troubleshoot why a computer might not be connecting to the internet step by step.,Systematic troubleshooting steps.,"Step 1: Check the Physical Connections
+It's possible that the Ethernet cable or the Wi-Fi adapter that you're using isn't properly connected, or perhaps it's faulty. Examine all of your machine's physical connections.
+
+Step 2: Try Another Device
+Before proceeding with more in-depth fixes, try connecting to the internet with another device. This will help you determine if the problem is with your computer specifically or if it's a more widespread issue.
+
+Step 3: Reboot Your Computer and Router
+Restart your computer and your router. It's not uncommon for temporary issues to be resolved with a simple reboot.
+
+Step 4: Run a Network Troubleshoot
+If you're using Windows, go to Control Panel > Network and Internet > Network and Sharing Center > Troubleshoot problems. On a Mac, navigate to Apple menu > System Preferences, then click Network. 
+
+Step 5: Disable Firewall Temporarily
+Sometimes, a firewall or anti-virus program may be blocking your connection. Try disabling them temporarily to see if this fixes the issue. 
+
+Step 6: Check Your IP Address
+Make sure your IP address is set up correctly. If your computer's IP address starts with 169 or is blank, it has not been assigned properly by the router.
+
+Step 7: Flush the DNS and Renew Your IP
+You can do this by opening Command Prompt (Windows) or Terminal (Mac), and typing in the command ""ipconfig /flushdns"" (Windows) or ""dscacheutil -flushcache"" (Mac). 
+
+Step 8: Update Network Adapter Driver
+If your network adapter's driver is outdated, it may cause connectivity issues. To update it, go to your computer manufacturer's support site, download the latest network driver, then install it on your computer.
+
+Step 9: Consult with Your ISP
+If you've tried everything above and your computer still isn't connecting, reach out to your Internet Service Provider. The problem could be at their end or they could assist you in troubleshooting further.",2025-03-02T02:50:07.781872
