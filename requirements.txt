@@ -1,0 +1,7 @@
+openai>=1.0.0
+transformers>=4.30.0
+torch>=1.13.1
+pandas>=1.5.3
+jupyterlab>=3.5.3
+python-dotenv>=1.0.0
+ctransformers>=0.2.15

@@ -1,3 +1,6 @@
+# Ignore local model files
+phi-2.Q4_K_M.gguf
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
