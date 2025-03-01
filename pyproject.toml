@@ -1,0 +1,8 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prompt_engineering_playbook"
+version = "0.1"
+dependencies = []
